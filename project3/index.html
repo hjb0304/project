@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관악구 통합 도서관</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #ffffff;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div id="top">
+                <ul>
+                    <li><a href="#;">로그인</a></li>
+                    <li><a href="#;">마이페이지</a></li>
+                </ul>
+            </div>
+            <div class="center">
+                <nav id="gnb">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                    <div class="con">
+                        <ul class="main_list">
+                            <li>
+                                <a href="#">자료 검색</a>
+                                <ul class="sub_list">
+                                    <li class="none"><a href="#;">통합자료 검색</a></li>
+                                    <li><a href="htm/sub.html">분야별 도서</a></li>
+                                    <li class="none"><a href="#;">U-도서관 검색</a></li>
+                                    <li class="none"><a href="#;">스마트 도서관 검색</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#">도서관 서비스</a>
+                                <ul class="sub_list">
+                                    <li class="none"><a href="#;">대출/반납</a></li>
+                                    <li class="none"><a href="#;">전자 도서관</a></li>
+                                    <li class="none"><a href="#;">희망 도서</a></li>
+                                    <li class="none"><a href="#;">동네서점 바로 대출제</a></li>
+                                    <li class="none"><a href="#;">모바일 회원증 신청</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#">나의 도서관</a>
+                                <ul class="sub_list">
+                                    <li class="none"><a href="#;">대출/반납 조회</a></li>
+                                    <li class="none"><a href="#;">책나래</a></li>
+                                    <li class="none"><a href="#;">희망 도서 신청 내역</a></li>
+                                    <li class="none"><a href="#;">관심 도서</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#">열린마당</a>
+                                <ul class="sub_list">
+                                    <li class="none"><a href="#;">공지사항</a></li>
+                                    <li class="none"><a href="#;">프로그램 안내</a></li>
+                                    <li class="none"><a href="#;">자주 묻는 질문</a></li>
+                                    <li class="none"><a href="#;">문의하기</a></li>
+                                    <li class="none"><a href="#;">자유 게시판</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#">도서관 안내</a>
+                                <ul class="sub_list">
+                                    <li class="none"><a href="#;">관악구 통합 도서관</a></li>
+                                    <li class="none"><a href="#;">공공 도서관</a></li>
+                                    <li class="none"><a href="#;">작은 도서관</a></li>
+                                    <li class="none"><a href="#;">개방학교 도서관</a></li>
+                                    <li class="none"><a href="#;">사립 도서관</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+
+                <div id="gnb2">
+                    <div id="mypage"><a href="#;"><img src="img/mypage.png" alt=""></a></div>
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                    <div id="hamburger"><img src="img/hamburger.png" alt=""></div>
+                    <div id="overlayer"></div>
+                    <ul class="main_list">
+                        <li class="close"><img src="img/x_button.png" alt=""></img></li>
+                        <li class="list">
+                            <a href="#">자료 검색</a>
+                            <ul class="sub_list">
+                                <li class="none"><a href="#;">- 통합자료 검색</a></li>
+                                <li><a href="sub.html">- 분야별 도서</a></li>
+                                <li class="none"><a href="#;">- U-도서관 검색</a></li>
+                                <li class="none"><a href="#;">- 스마트 도서관 검색</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="list">
+                            <a href="#">도서관 서비스</a>
+                            <ul class="sub_list">
+                                <li class="none"><a href="#;">- 대출/반납</a></li>
+                                <li class="none"><a href="#;">- 전자 도서관</a></li>
+                                <li class="none"><a href="#;">- 희망 도서</a></li>
+                                <li class="none"><a href="#;">- 동네서점 바로 대출제</a></li>
+                                <li class="none"><a href="#;">- 모바일 회원증 신청</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="list">
+                            <a href="#">나의 도서관</a>
+                            <ul class="sub_list">
+                                <li class="none"><a href="#;">- 대출/반납 조회</a></li>
+                                <li class="none"><a href="#;">- 책나래</a></li>
+                                <li class="none"><a href="#;">- 희망 도서 신청 내역</a></li>
+                                <li class="none"><a href="#;">- 관심 도서</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="list">
+                            <a href="#">열린마당</a>
+                            <ul class="sub_list">
+                                <li class="none"><a href="#;">- 공지사항</a></li>
+                                <li class="none"><a href="#;">- 프로그램 안내</a></li>
+                                <li class="none"><a href="#;">- 자주 묻는 질문</a></li>
+                                <li class="none"><a href="#;">- 문의하기</a></li>
+                                <li class="none"><a href="#;">- 자유 게시판</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="list">
+                            <a href="#">도서관 안내</a>
+                            <ul class="sub_list">
+                                <li class="none"><a href="#;">- 관악구 통합 도서관</a></li>
+                                <li class="none"><a href="#;">- 공공 도서관</a></li>
+                                <li class="none"><a href="#;">- 작은 도서관</a></li>
+                                <li class="none"><a href="#;">- 개방학교 도서관</a></li>
+                                <li class="none"><a href="#;">- 사립 도서관</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="center">
+            <!-- 1440 -->
+            <div id="search">
+                <div id="search_box">
+                    <div id="s_sort">
+                        <select name="" id="">
+                            <option value="" selected>전체</option>
+                            <option value="">서명</option>
+                            <option value="">저자</option>
+                            <option value="">출판사</option>
+                        </select>
+                    </div>
+                    <input type="text">
+                    <a href="#;"><img src="img/search.png" alt=""></a>
+                </div>
+            </div>
+
+            <div id="main">
+                <div id="slide">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/slide1.png" alt=""></div>
+                            <div class="swiper-slide"><img src="img/slide2.png" alt=""></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <!-- Swiper JS -->
+                    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+                    <!-- Initialize Swiper -->
+                    <script>
+                        var swiper = new Swiper("#slide .mySwiper", {
+                            slidesPerView: 1,
+                            spaceBetween: 30,
+                            loop: true,
+                            pagination: {
+                                el: "#slide .swiper-pagination",
+                                clickable: true,
+                            },
+                            navigation: {
+                                nextEl: "#slide .swiper-button-next",
+                                prevEl: "#slide .swiper-button-prev",
+                            },
+                        });
+                    </script>
+                </div>
+
+                <div id="quick_menu">
+                    <ul>
+                        <li><a href="#;"><img src="img/q_icon-01.png" alt="">대출/반납 조회</a></li>
+                        <li><a href="#;"><img src="img/q_icon-02.png" alt="">희망 도서</a></li>
+                        <li><a href="#;"><img src="img/q_icon-03.png" alt="">책나래</a></li>
+                        <li><a href="#;"><img src="img/q_icon-04.png" alt="">문의하기</a></li>
+                        <li><a href="#;"><img src="img/q_icon-05.png" alt="">프로그램 안내</a></li>
+                        <li><a href="#;"><img src="img/q_icon-06.png" alt="">도서관 안내</a></li>
+                    </ul>
+                </div>
+
+                <div id="lib_list">
+                    <ul class="first">
+                        <li><a href="#;"><img src="img/lib-01.png" alt=""></a></li>
+                        <li><a href="#;"><img src="img/lib-02.png" alt=""></a></li>
+                        <li><a href="#;"><img src="img/lib-03.png" alt=""></a></li>
+                        <li><a href="#;"><img src="img/lib-04.png" alt=""></a></li>
+                        <li><a href="#;"><img src="img/lib-05.png" alt=""></a></li>
+                        <li><a href="#;"><img src="img/lib-06.png" alt=""></a></li>
+                        <li><a href="#;"><img src="img/lib-07.png" alt=""></a></li>
+                        <li><a href="#;"><img src="img/lib-08.png" alt=""></a></li>
+                        <li><a href="#;"><img src="img/lib-09.png" alt=""></a></li>
+                        <li><a href="#;"><img src="img/lib-10.png" alt=""></a></li>
+                    </ul>
+                </div>
+
+
+                <div id="book">
+                    <div class="tap">추천 도서</div>
+                    <div class="con">
+                        <!-- Swiper -->
+                        <div class="swiper my">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide"><a href="#;"><img src="img/book01.png" alt=""><span>목소리를 드릴게요</span></a>
+                                </li>
+                                <li class="swiper-slide"><a href="#;"><img src="img/book02.png" alt=""><span>여행의 이유 :김영하 산문</span></a>
+                                </li>
+                                <li class="swiper-slide"><a href="#;"><img src="img/book03.png" alt=""><span>바깥은 여름 :김애란 소설</span></a>
+                                </li>
+                                <li class="swiper-slide"><a href="#;"><img src="img/book04.png" alt=""><span>소년이 온다 :한강 장편소설</span></a>
+                                </li>
+                                <li class="swiper-slide"><a href="#;"><img src="img/book05.png" alt=""><span>나미야 잡화점의 기적 :히가시노 게이고 장편소설</span></a>
+                                </li>
+                                <li class="swiper-slide"><a href="#;"><img src="img/book06.png" alt=""><span>존리의 부자되기 습관 :대한민국 경제독립 액션 플랜: "You can do it"</span></a>
+                                </li>
+                                <li class="swiper-slide"><a href="#;"><img src="img/book07.png" alt=""><span>나는 소망한다 내게 금지된 것을 :양귀자 장편소설</span></a>
+                                </li>
+                                <li class="swiper-slide"><a href="#;"><img src="img/book08.png" alt=""><span>나미야 잡화점의 기적 :히가시노 게이고 장편소설</span></a>
+                                </li>
+                                <li class="swiper-slide"><a href="#;"><img src="img/book09.png" alt=""><span>채식주의자 :한강 연작소설</span></a>
+                                </li>
+                                <li class="swiper-slide"><a href="#;"><img src="img/book10.png" alt=""><span>총, 균, 쇠 :무기, 병균, 금속은 인류의 운명을 어떻게 바꿨는가</span></a>
+                                </li>
+                            </ul>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <!-- Swiper JS -->
+                        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+                        <!-- Initialize Swiper -->
+                        <script>
+                            var swiper = new Swiper(".my", {
+                                slidesPerView: 6,
+                                spaceBetween: 30,
+                                pagination: {
+                                    el: ".swiper-pagination",
+                                    clickable: true,
+                                },
+                            });
+                        </script>
+                    </div>
+                </div>
+
+                <div id="sort">
+                    <div class="tap">분야별 도서</div>
+                    <div class="con">
+                        <ul class="first">
+                            <li><a href="#;"><img src="img/s_icon01.png" alt="">총류</a></li>
+                            <li><a href="#;"><img src="img/s_icon02.png" alt="">철학</a></li>
+                            <li><a href="#;"><img src="img/s_icon03.png" alt="">종교</a></li>
+                            <li><a href="#;"><img src="img/s_icon04.png" alt="">사회과학</a></li>
+                            <li><a href="#;"><img src="img/s_icon05.png" alt="">자연과학</a></li>
+                            <li><a href="#;"><img src="img/s_icon06.png" alt="">기술과학</a></li>
+                            <li><a href="#;"><img src="img/s_icon07.png" alt="">예술</a></li>
+                            <li><a href="#;"><img src="img/s_icon08.png" alt="">언어</a></li>
+                            <li><a href="#;"><img src="img/s_icon09.png" alt="">문학</a></li>
+                            <li><a href="#;"><img src="img/s_icon10.png" alt="">역사 </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="notice">
+                    <div class="tap">공지사항</div>
+                    <ul>
+                        <li><a href="#;">문자안내서비스(SMS) 및 카카오톡 알림톡 서비스1</a></li>
+                        <li><a href="#;">문자안내서비스(SMS) 및 카카오톡 알림톡 서비스1</a></li>
+                        <li><a href="#;">문자안내서비스(SMS) 및 카카오톡 알림톡 서비스1</a></li>
+                        <li><a href="#;">문자안내서비스(SMS) 및 카카오톡 알림톡 서비스1</a></li>
+                        <li><a href="#;">문자안내서비스(SMS) 및 카카오톡 알림톡 서비스1</a></li>
+                        <li><a href="#;">문자안내서비스(SMS) 및 카카오톡 알림톡 서비스1</a></li>
+                    </ul>
+                </div>
+
+                <div id="notice2">
+                    <div class="tap">공지사항</div>
+                    <ul>
+                        <li><a href="#;">문자안내서비스(SMS) 및 카카오톡 알림톡 서비스1</a></li>
+                        <li><a href="#;">문자안내서비스(SMS) 및 카카오톡 알림톡 서비스2</a></li>
+                        <li><a href="#;">문자안내서비스(SMS) 및 카카오톡 알림톡 서비스3</a></li>
+                        <li><a href="#;">문자안내서비스(SMS) 및 카카오톡 알림톡 서비스4</a></li>
+                        <li><a href="#;">문자안내서비스(SMS) 및 카카오톡 알림톡 서비스5</a></li>
+                        <li><a href="#;">문자안내서비스(SMS) 및 카카오톡 알림톡 서비스6</a></li>
+                        <li><a href="#;">문자안내서비스(SMS) 및 카카오톡 알림톡 서비스7</a></li>
+                        <li><a href="#;">문자안내서비스(SMS) 및 카카오톡 알림톡 서비스8</a></li>
+                    </ul>
+                </div>
+
+                <div id="event">
+                    <div class="tap">행사</div>
+                    <div id="image">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="img/event1.png" alt=""></div>
+                                <div class="swiper-slide"><img src="img/event2.png" alt=""></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                        <!-- Initialize Swiper -->
+                        <script>
+                            var swiper = new Swiper("#event .mySwiper", {
+                                slidesPerView: 1,
+                                spaceBetween: 30,
+                                loop: true,
+                                pagination: {
+                                    el: "#event .swiper-pagination",
+                                    clickable: true,
+                                },
+                                navigation: {
+                                    nextEl: "#event .swiper-button-next",
+                                    prevEl: "#event .swiper-button-prev",
+                                },
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <ul>
+                <li><a href="#;">개인정보처리방침</a></li>
+                <li><a href="#;">이용약관</a></li>
+                <li><a href="#;">이메일무단수집거부</a></li>
+            </ul>
+            <div id="address">문의전화 관악중앙도서관 TEL : 02)828-5700 <br>
+                관악구청 문화관광체육과 TEL : 02)879-5721 <br>
+                COPYRIGHT(C) 2011 GWANAK LIBRARY. ALL RIGHTS RESERVED.</div>
+        </footer>
+    </div>
+</body>
+
+</html>

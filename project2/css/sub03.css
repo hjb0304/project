@@ -1,0 +1,13 @@
+nav{height: 54px; padding: 18px 13px; box-sizing: border-box; position: relative; margin-bottom: 30px;}
+nav #menu ul li{float: left; font-size: 14px; margin-right: 23px;}
+nav #menu ul li:first-child a{color: #bf495e; font-family: 나눔스퀘어B;}
+nav #menu ul li:last-child{margin-right: 0;}
+
+.card li{width: 100%; height: 202px; margin-bottom: 18px; font-size: 12px;}
+.card .image{width: 149px; height: 100%; background-color: #EEE8E0; float: left; display: flex; justify-content: center; align-items: center;}
+.card img{width: 130px;}
+.card .para{width: 188px; height: 100%; display: flex; align-items: center; padding: 0 10px; box-sizing: border-box; float: right;}
+.card .name{font-family: 나눔스퀘어B; text-align: center; font-size: 14px; color: #bf495e; margin-bottom: 10px;}
+
+.notice{font-size: 12px; padding: 30px 0;}
+.notice h4{color:#bf495e; font-size: 14px; margin-bottom: 10px;}

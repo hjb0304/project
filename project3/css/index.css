@@ -1,0 +1,119 @@
+#search{height: 105px; display: flex; justify-content: center; align-items: center;}
+#search #search_box{width: 735px; height: 45px;}
+#search #search_box #s_sort{width: 83px; height: 45px; border: 2px solid #6ccdc7; float: left; display: flex; align-items: center; box-sizing: border-box;}
+#search #search_box #s_sort select{width: 83px; height: 43px; font-size: 1rem; padding: 10px; background: transparent; border: 0;}
+#search #search_box input{width: 607px; float: left; height: 45px; border: 2px solid #6ccdc7; box-sizing: border-box;}
+#search #search_box img{width: 45px; float: right;}
+
+#main{width: 100%; height: 27vw; margin-bottom: 50px;}
+
+#slide{width: 59.583%; height: 100%; float: left; overflow: hidden;}
+#slide img{width: 100%;}
+
+#quick_menu{display: flex; align-items: center; width: 40.417%; height: 50%; background-color: #d4f1f4; float: right; box-sizing: border-box;}
+#quick_menu ul li{width: 33.334%; font-size: 1rem; text-align: center; float: left;}
+#quick_menu ul li a{width: 100%;}
+#quick_menu ul li img{width: 100%; padding: 0 28.017%; box-sizing: border-box;}
+
+#lib_list{display: flex; align-items: center; width: 40.417%; height: 50%; background-color: #6ccdc7; float: right; box-sizing: border-box; padding: 0 5px;}
+#lib_list ul li{width: 20%; float: left; padding: 5px; box-sizing: border-box;}
+#lib_list ul li img{width: 100%;}
+
+.tap{border-bottom: 3px solid #a8e2ee; font-size: 1.5rem; font-family: 'Kopub돋움Bold'; padding: 22px 0.694%; box-sizing: border-box;}
+
+#book{clear: both; margin-bottom: 50px; overflow: hidden;} 
+#book .con{padding: 50px 2.083%; box-sizing: border-box;}
+#book ul li{width: 14.855%; font-size: 1.143rem; float: left; margin-left: 2.174%; text-align: center;}
+#book ul li:first-child{margin-left: 0;}
+#book ul li a img{margin-bottom: 10px;}
+
+#sort{height: 234px; margin-bottom: 50px;}
+#sort .con{padding: 30px 0; box-sizing: border-box;}
+#sort ul li{width: 10%; font-size: 1.143rem; float: left; padding: 10px; box-sizing: border-box; text-align: center;}
+#sort ul li img{width: 100%;}
+
+
+#notice{width: 50%; height: 27.668vw; float: left; margin-bottom: 50px;}
+#notice ul{height: 83.333%; padding: 30px 10px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between;}
+#notice ul li a{font-size: 1.25rem;}
+#notice2{display: none;}
+
+#event{width: 50%; float: left; overflow: hidden;}
+#event #image{width: 85.549%; padding: 7.225%;}
+#event #image img{width: 100%;}
+
+/* m */
+@media screen and (min-width: 360px) and (max-width: 767px){
+.center{width: 90%; min-width: 324px; max-width: 690.3px;}
+
+#search #search_box{width: 324px; height: 47px;}
+#search #search_box #s_sort{width: 72px; height: 47px;}
+#search #search_box #s_sort select{width: 72px; height: 47px; padding: 15px;}
+#search #search_box input{width: 205px; height: 47px;}
+#search #search_box a img{width: 47px;}
+
+#slide{width: 100%; height: initial;}
+#slide img{width: 100%;}
+
+#quick_menu{width: 100%; height: initial; padding: 14px 0; box-sizing: border-box;}
+#quick_menu ul li{width: 33.334%; font-size: 0.857rem;}
+#quick_menu ul li img{padding: 0 25%;}
+
+#lib_list{width: 100%; height: initial; padding: 14px 5px; margin-bottom: 30px; clear: both; box-sizing: border-box;}
+
+.tap{font-size: 1.143rem; padding: 7px 1.543%;}
+
+#book{height: 213px; margin-bottom: 30px;}
+#book .con{padding: 9px 2.160%;}
+#book ul li{width: 28.758%; font-size: 0.857rem; margin-left: 6.863%;}
+#book ul li img{width: 100%; min-width: 88px;}
+
+#sort{height: 222px; margin-bottom: 30px;}
+#sort .con{padding: 10px 0;}
+#sort ul li{width: 20%; font-size: 0.857rem;}
+
+#notice{display: none;}
+#notice2{display: block; width: 100%; margin-bottom: 30px;}
+#notice2 ul{height: 44px; position: relative; overflow: hidden; font-size: 1rem;}
+#notice2 ul li{width: 100%; text-align: center; position: absolute; background-color: #d4f1f4; line-height: 44px;}
+
+#event{width: 100%;}
+#event #image{padding-top: 10px;}
+#event #image img{width: 100%;}
+}
+
+/* t */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+.center{width: 90%; min-width: 691.2px; max-width: 921.6px;}
+#search #search_box{width: 614px;}
+#search #search_box #s_sort{width: 56px;}
+#search #search_box #s_sort select{width: 100%; padding: 9px 16.364%;}
+#search #search_box input{width: 512px;}
+
+#slide{width: 100%; height: initial;}
+#slide img{width: 100%;}
+    
+#quick_menu{width: 100%; height: initial; padding: 20px 10px;}
+#quick_menu ul li{width: 16.667%;}
+#quick_menu ul li img{padding: 0 7.554%; box-sizing: border-box;}
+
+#lib_list{width: 100%; height: initial; padding: 20px 0;}
+#lib_list ul li{padding: 10px; box-sizing: border-box;}
+
+#book{height: 284px;}
+#book .con{padding: 28px 3.473%;}
+#book ul li{width: 17.134%; margin-left: 3.582%;}
+#book ul li img{width: 100%;}
+
+#sort{height: 361px; margin-bottom: 40px;}
+#sort .con{padding: 25px 0;}
+#sort ul{background-color: #a8e2ee;}
+#sort ul li{width: 20%; padding: 0 3.632%; box-sizing: border-box; margin-bottom: 10px;}
+
+#notice{height: 41.276vw;}
+#notice ul{padding: 7.225% 0 7.225% 10px;}
+#notice ul li a{font-size: 1rem;}
+
+#event #image{width: 85.549%; padding: 7.225%;}
+#event #image img{width: 100%;}
+}

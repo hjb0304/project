@@ -1,0 +1,90 @@
+#menu_des{height: 140px; background-color: #d4f1f4; box-sizing: border-box; display: flex; align-items: center;}
+#menu_des div ul{margin-bottom: 20px; clear: both; height: 13px;}
+#menu_des div ul li{font-size: 0.857rem; float: left;}
+#menu_des h3{font-size: 2rem; float: left; clear: both;}
+
+section{width: 100%; height: 480px; padding: 40px 0; box-sizing: border-box; position: relative;}
+
+#sub_menu{width: 25%; height: 400px; float: left;}
+#sub_menu ul li{height: 80px; font-size: 1.286rem; text-align: center; border-bottom: 1px solid #cccccc; padding: 30px 0; box-sizing: border-box; font-family: 'Kopub돋움Bold';}
+#sub_menu ul li:first-child{background-color: #1bb2d1; font-size: 20px;}
+#sub_menu ul li:first-child a{color: #ffffff;}
+#sub_menu ul li a:nth-child(3){color: #1bb2d1;}
+
+#sort{width: 71.18%; margin-left: 28.819%; display: flex; flex-direction: column; align-items: center; position: absolute; top: 50%; transform: translateY(-50%);}
+#sort ul{width: 52.632%;}
+#sort ul li{width: 20%; float: left; border: 1px solid #cccccc; text-align: center; font-size: 1rem; display: flex; justify-content: center; padding-bottom: 5px; box-sizing: border-box;}
+#sort ul li img{width: 100%; box-sizing: border-box; padding: 10px;}
+
+#book_list{width: 71.18%; margin-left: 28.819%;}
+#book_list .tap{font-size: 1.429rem; font-family: 'Kopub돋움Bold'; padding: 19px 1.268%; box-sizing: border-box;}
+#book_list #cate{padding: 21px 1.268%;}
+#book_list #cate select{padding: 5px; font-size: 1rem;}
+#book_list ul.main_list>li{height: 281px; padding: 30px 2.927%; border-bottom: 1px solid #cccccc; box-sizing: border-box; clear: both;}
+#book_list ul.main_list>li:first-child{border-top: 1px solid #cccccc;}
+#book_list ul.main_list>li a{display: block; font-size: 1.143rem; font-family: Kopub돋움Bold;}
+#book_list ul.main_list>li img{width: 163px; float: left; margin-right: 2.927%;}
+#book_list ul{height: 100%;}
+#book_list ul.sub_list{display: flex; flex-direction: column; justify-content: space-evenly;}
+#book_list #number{height: 84px; padding: 27px 23.122%; box-sizing: border-box;}
+#book_list #number ul li{width: 5.454%; height: 30px; float: left; background-color: #a8e2ee; margin-right: 1.818%; margin-bottom: 5px; font-size: 1rem; text-align: center; line-height: 30px; box-sizing: border-box;}
+#book_list #number ul li:last-child{margin-right: 0;}
+#book_list #number ul li a{display: block;}
+
+
+/* m */
+@media screen and (min-width: 360px) and (max-width: 767px){
+.center{width: 90%; min-width: 324px; max-width: 690.3px;}
+#menu_des{padding-left: 5.556%;}
+#menu_des ul{display: none;}
+#menu_des h3{font-size: 1.429rem;}
+
+section{width: 100%; height: 218px; padding: 30px 8.642%;}
+
+#sub_menu{display: none;}
+
+#sort{width: 100%; position: static; top: 0; transform: unset; display: initial; margin-left: 0; display: flex; flex-direction: column; align-items: center;}
+#sort ul{width: 100%;}
+#sort ul li{width: 20%; font-size: 0.857rem;}
+#sort ul li img{width: 100%; padding: 5px; box-sizing: border-box;}
+
+#book_list{width: 100%; margin-left: 0; float: left;}
+#book_list .tap{font-size: 1rem; padding: 7px 2.16%;}
+#book_list #cate{padding: 7px 2.16%;}
+#book_list #cate select{padding: 7px; font-size: 0.857rem;}
+#book_list ul.main_list li{ font-size: 0.857rem;}
+#book_list ul.main_list>li{height: 140.74px; padding: 15px 4.63%;}
+#book_list ul.main_list>li img{width: 81px; margin-right: 4.63%;}
+#book_list #number{height: 101px; padding: 20px 14.815%;}
+#book_list #number ul{margin: 0 0 5px 0;}
+#book_list #number ul li{width: 12.389%; height: 28px; margin-right: 2.212%; font-size: 0.857rem; line-height: 28px;}
+#book_list #number ul li:nth-child(7){margin-right: 0;}
+
+
+}
+
+/* t */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+.center{width: 90%; min-width: 691.2px; max-width: 921.6px;}  
+#menu_des{padding-left: 2.604%;}
+#menu_des ul li{display: none;}
+#menu_des h3{font-size: 1.714rem;}
+    
+section{height: 100%; padding: 30px 10.709%;}
+    
+#sub_menu{display: none;}
+    
+#sort{width: 100%; position: static; top: 0; transform: unset; clear: both; padding: 30px 0; margin-left: 0;}
+#sort ul{width: 100%;}
+
+#book_list{width: 100%; margin-left: 0; clear: both;}
+#book_list .tap{font-size: 1.25rem; padding: 10px 1.158%;}
+#book_list #cate{padding: 8px 1.158%;}
+#book_list #cate select{padding: 5px;}
+#book_list ul.main_list li{font-size: 1rem;}
+#book_list ul.main_list>li{height: 172px; padding: 18px 2.605%;}
+#book_list ul.main_list>li img{width: 99.45px; margin-right: 2.894%;}
+#book_list #number{height: 122px; padding: 30px 33.43%;}
+#book_list #number ul li{width: 12.389%; height: 28px; margin-right: 2.212%; line-height: 28px; margin-bottom: 5px;}
+#book_list #number ul li:nth-child(7){margin-right: 0;}
+}  

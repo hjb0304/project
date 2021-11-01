@@ -1,0 +1,12 @@
+nav{height: 54px; padding: 18px 0; box-sizing: border-box; position: relative; margin-bottom: 30px;}
+nav #menu ul li{float: left; font-size: 14px; margin-right: 17px;}
+nav #menu ul li:first-child a{color: #bf495e; font-family: 나눔스퀘어B;}
+nav #menu ul li:last-child{margin-right: 0;}
+
+.food li{height: 201px; margin-bottom: 18px;}
+.food .image{width: 194px; float: left; display: block; height: inherit; background-color: #EEE8E0; padding-top: 39px; box-sizing: border-box;}
+.food img{margin-left: 35px;}
+.food .para{width: 114px; height: inherit; float: right; display: flex; align-items: center;}
+.food .name{font-family: 나눔스퀘어B; text-align: center;}
+.food .des{font-size: 11px;}
+

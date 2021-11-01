@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타마켓</title>
+    <link rel="stylesheet" href="css/default_style.css">
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/query.js"></script>
+
+</head>
+
+<body>
+    <nav id="top_menu">
+        <div class="center">
+            <div id="login">
+                <a href="#;">
+                    <img src="img/login01.png" alt=""><span>로그인</span>
+                </a>
+                <a href="#;">
+                    <img src="img/login02.png" alt=""><span>마이페이지</span>
+                </a>
+            </div>
+            <div class="button">
+                <a href="#" id="ham"><img src="img/hamburger.png" alt=""></a>
+                <a href="#;"><img src="img/mypage.png" alt=""></a>
+            </div>
+            <div class="logo"><a href="index.html"><img src="img/logo.png" alt=""></a></div>
+            <div class="logo hide"><a href="index.html"><img src="img/w_logo.png" alt=""></a></div>
+        </div>
+    </nav>
+
+    <div id="search">
+        <div class="center">
+            <div id="box02">
+                <input type="text">
+                <img src="img/search.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="header">
+        <div class="center">
+            <nav id="gnb">
+                <ul class="main_menu">
+                    <li>
+                        <a href="#">아이돌</a>
+                        <ul class="sub_menu">
+                            <li><a href="#;">남자 아이돌</a></li>
+                            <li><a href="#;">여자 아이돌</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">솔로</a>
+                        <ul class="sub_menu">
+                            <li><a href="#;">남자 솔로</a></li>
+                            <li><a href="#;">여자 솔로</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">배우</a>
+                        <ul class="sub_menu">
+                            <li><a href="#;">남자 배우</a></li>
+                            <li><a href="#;">여자 배우</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">기타</a>
+                        <ul class="sub_menu">
+                            <li><a href="#;">기타 상품</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">커뮤니티</a>
+                        <ul class="sub_menu">
+                            <li><a href="#;">동네 커뮤니티</a></li>
+                            <li><a href="#;">팬 커뮤니티</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav id="gnb2">
+                <div id="bg"></div>
+                <ul class="main_menu">
+                    <li><a href="#"><img src="img/x_button.png" alt=""></a></li>
+                    <li>
+                        <a href="#">아이돌</a>
+                        <ul class="sub_menu">
+                            <li><a href="#;">남자 아이돌</a></li>
+                            <li><a href="#;">여자 아이돌</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">솔로</a>
+                        <ul class="sub_menu">
+                            <li><a href="#;">남자 솔로</a></li>
+                            <li><a href="#;">여자 솔로</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">배우</a>
+                        <ul class="sub_menu">
+                            <li><a href="#;">남자 배우</a></li>
+                            <li><a href="#;">여자 배우</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">기타</a>
+                        <ul class="sub_menu">
+                            <li><a href="#;">기타 상품</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">커뮤니티</a>
+                        <ul class="sub_menu">
+                            <li><a href="#;">동네 커뮤니티</a></li>
+                            <li><a href="#;">팬 커뮤니티</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+
+    <div id="container">
+        <div class="center">
+            <div class="section01">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/slide.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/slide2.png" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                        loop: true,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                    });
+                </script>
+            </div>
+
+            <div class="section02">
+                <div class="title">
+                    <a href="#;">아이돌 상품</a>
+                    <div></div>
+                </div>
+                <div class="product">
+                    <ul>
+                        <li class="image">
+                            <a href="#;">
+                                <img src="img/p01.JPG" alt="">
+                                <div>브레이브 걸스 브로마이드</div>
+                            </a>
+                        </li>
+                        <li class="des">
+                            <div>0000원</div>
+                            <div>
+                                <img src="img/i_heart.png" alt="">
+                                <span>0</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="image">
+                            <a href="htm/sub.html">
+                                <img src="img/p02.JPG" alt="">
+                                <div>에스파 윈터 홀로그램 세트 판매</div>
+                            </a>
+                        </li>
+                        <li class="des">
+                            <div>0000원</div>
+                            <div>
+                                <img src="img/i_heart.png" alt="">
+                                <span>0</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="image">
+                            <a href="#;">
+                                <img src="img/p03.JPG" alt="">
+                                <div>하이라이트 미개봉 앨범 판매</div>
+                            </a>
+                        </li>
+                        <li class="des">
+                            <div>0000원</div>
+                            <div>
+                                <img src="img/i_heart.png" alt="">
+                                <span>0</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="image">
+                            <a href="#;">
+                                <img src="img/p04.JPG" alt="">
+                                <div>NCT 포카</div>
+                            </a>
+                        </li>
+                        <li class="des">
+                            <div>0000원</div>
+                            <div>
+                                <img src="img/i_heart.png" alt="">
+                                <span>0</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space">
+                    <a href="#;">
+                        더보기
+                    </a>
+                </div>
+            </div>
+
+            <div class="section02">
+                <div class="title">
+                    <a href="#;">솔로 가수 상품</a>
+                    <div></div>
+                </div>
+                <div class="product">
+                    <ul>
+                        <li class="image">
+                            <a href="#;">
+                                <img src="img/p05.JPG" alt="">
+                                <div>아리아나그란데 positions</div>
+                            </a>
+                        </li>
+                        <li class="des">
+                            <div>0000원</div>
+                            <div>
+                                <img src="img/i_heart.png" alt="">
+                                <span>0</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="image">
+                            <a href="#;">
+                                <img src="img/p06.JPG" alt="">
+                                <div>청하 2021시즌그리팅 엽서세트</div>
+                            </a>
+                        </li>
+                        <li class="des">
+                            <div>0000원</div>
+                            <div>
+                                <img src="img/i_heart.png" alt="">
+                                <span>0</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="image">
+                            <a href="#;">
+                                <img src="img/p07.JPG" alt="">
+                                <div>태연 파리바게트, My Voice 포스터</div>
+                            </a>
+                        </li>
+                        <li class="des">
+                            <div>0000원</div>
+                            <div>
+                                <img src="img/i_heart.png" alt="">
+                                <span>0</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="image">
+                            <a href="#;">
+                                <img src="img/p08.JPG" alt="">
+                                <div>아이유 하이락 앨범 양도</div>
+                            </a>
+                        </li>
+                        <li class="des">
+                            <div>0000원</div>
+                            <div>
+                                <img src="img/i_heart.png" alt="">
+                                <span>0</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space">
+                    <a href="#;">
+                        더보기
+                    </a>
+                </div>
+            </div>
+
+            <div class="section02">
+                <div class="title">
+                    <a href="#;">배우 상품</a>
+                    <div></div>
+                </div>
+                <div class="product">
+                    <ul>
+                        <li class="image">
+                            <a href="#;">
+                                <img src="img/p09.JPG" alt="">
+                                <div>오보이 40호</div>
+                            </a>
+                        </li>
+                        <li class="des">
+                            <div>0000원</div>
+                            <div>
+                                <img src="img/i_heart.png" alt="">
+                                <span>0</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="image">
+                            <a href="#;">
+                                <img src="img/p10.JPG" alt="">
+                                <div>싱글즈 2020 10월 193호 이민정</div>
+                            </a>
+                        </li>
+                        <li class="des">
+                            <div>0000원</div>
+                            <div>
+                                <img src="img/i_heart.png" alt="">
+                                <span>0</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="image">
+                            <a href="#;">
+                                <img src="img/p11.JPG" alt="">
+                                <div>펜트하우스 포스터</div>
+                            </a>
+                        </li>
+                        <li class="des">
+                            <div>0000원</div>
+                            <div>
+                                <img src="img/i_heart.png" alt="">
+                                <span>0</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="image">
+                            <a href="#;">
+                                <img src="img/p12.JPG" alt="">
+                                <div>배우 한지민씨 싸인볼</div>
+                            </a>
+                        </li>
+                        <li class="des">
+                            <div>0000원</div>
+                            <div>
+                                <img src="img/i_heart.png" alt="">
+                                <span>0</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space">
+                    <a href="#;">
+                        더보기
+                    </a>
+                </div>
+            </div>
+
+            <div class="section02">
+                <div class="title">
+                    <a href="#;">기타 상품</a>
+                    <div></div>
+                </div>
+                <div class="product">
+                    <ul>
+                        <li class="image">
+                            <a href="#;">
+                                <img src="img/p13.JPG" alt="">
+                                <div>피노키오 디비디 판매합니다</div>
+                            </a>
+                        </li>
+                        <li class="des">
+                            <div>0000원</div>
+                            <div>
+                                <img src="img/i_heart.png" alt="">
+                                <span>0</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="image">
+                            <a href="#;">
+                                <img src="img/p14.JPG" alt="">
+                                <div>김연아 은퇴기념 은화</div>
+                            </a>
+                        </li>
+                        <li class="des">
+                            <div>0000원</div>
+                            <div>
+                                <img src="img/i_heart.png" alt="">
+                                <span>0</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="image">
+                            <a href="#;">
+                                <img src="img/p15.JPG" alt="">
+                                <div>오늘도 펭수, 내일도 펭수 다이어리!</div>
+                            </a>
+                        </li>
+                        <li class="des">
+                            <div>0000원</div>
+                            <div>
+                                <img src="img/i_heart.png" alt="">
+                                <span>0</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="image">
+                            <a href="#;">
+                                <img src="img/p16.JPG" alt="">
+                                <div>티원 골드 멤버십 포카</div>
+                            </a>
+                        </li>
+                        <li class="des">
+                            <div>0000원</div>
+                            <div>
+                                <img src="img/i_heart.png" alt="">
+                                <span>0</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space">
+                    <a href="#;">
+                        더보기
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="center">
+            <div class="line">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="footer_menu">
+                <ul>
+                    <li><a href="#;">공지사항</a></li>
+                    <li><a href="#;">FAQ</a></li>
+                    <li><a href="#;">1:1 문의</a></li>
+                    <li><a href="#;">사업자 정보</a></li>
+                    <li><a href="#;">이용약관</a></li>
+                </ul>
+            </div>
+
+            <div id="address">
+                대표이사: XXX | 개인정보보호담당자: XXX | 주소: 서울특별시 XX구 XXXX XX길 XX XXXXXX X층 | 사업자등록번호: XXX-XX-XXXXX
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
