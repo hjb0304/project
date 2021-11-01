@@ -13,79 +13,79 @@ ul{list-style-type: none;}
 a{text-decoration: none;}
 #wrap{width: 100%;}
 
-header{width: 100%; background-color: #1bb2d1;}
-header #top{height: 30px; background-color: #ffffff; position: relative;}
-header #top ul{position: absolute; top: 7px; right: 12.5%;}
-header #top ul li{float: left; font-size: 1rem; margin-left: 25px;}
-header #gnb{width: 100%; height: 140px; position: relative; margin: 0 auto;}
-header #gnb .logo{position: absolute; top: 36px;}
-header #gnb .con{width: 77.778%; box-sizing: border-box; margin-left: 22.222%;}
-header #gnb ul.main_list>li{width: 20%; float: left; font-size: 1.25rem; text-align: center; position: relative; box-sizing: border-box;}
-header #gnb ul.main_list>li>a{line-height: 140px; display: block; color: #ffffff; }
-header #gnb ul.sub_list{width: 100%; height: 190px; position: absolute; z-index: 999; background-color: #e4e4e4; display: none;}
-header #gnb ul.sub_list li{text-align: center; padding: 4.464%; box-sizing: border-box; font-size: 1.125rem;}
+#header{width: 100%; background-color: #1bb2d1;}
+#header #top{height: 30px; background-color: #ffffff; position: relative;}
+#header #top ul{position: absolute; top: 7px; right: 12.5%;}
+#header #top ul li{float: left; font-size: 1rem; margin-left: 25px;}
+#header #gnb{width: 100%; height: 140px; position: relative; margin: 0 auto;}
+#header #gnb .logo{position: absolute; top: 36px;}
+#header #gnb .con{width: 77.778%; box-sizing: border-box; margin-left: 22.222%;}
+#header #gnb ul.main_list>li{width: 20%; float: left; font-size: 1.25rem; text-align: center; position: relative; box-sizing: border-box;}
+#header #gnb ul.main_list>li>a{line-height: 140px; display: block; color: #ffffff; }
+#header #gnb ul.sub_list{width: 100%; height: 190px; position: absolute; z-index: 999; background-color: #e4e4e4; display: none;}
+#header #gnb ul.sub_list li{text-align: center; padding: 4.464%; box-sizing: border-box; font-size: 1.125rem;}
 ul.sub_list li.none a{color: #999;}
 
-header #gnb2{width: 100%; height: 76px; padding: 0 8.203%; box-sizing: border-box; position: relative;}
-header #gnb2{display: none;}
-header #gnb2 #mypage{float: left; position: absolute; top: 50%; transform: translateY(-50%);}
-header #gnb2 .logo{width: 80px; float: left; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
-header #gnb2 .logo img{width: 100%;}
-header #gnb2 #hamburger{position: absolute; top: 50%; right: 9.117%; transform: translateY(-50%); cursor: pointer;}
-header #gnb2 ul.main_list{top: 0; left: -100%; position: fixed; z-index: 999; transition: 0.5s ease-in-out;}
-header #gnb2 ul.main_list li{width: 100%; font-size: 1.286rem; line-height: 60px; text-align: center; background-color: #ffffff;}
-header #gnb2 ul.main_list>li>a{font-family: 'Kopub돋움Bold';}
-header #gnb2 ul.main_list>li:first-child{width: 100%; height: 60px; background-color: #1bb2d1;}
-header #gnb2 ul.main_list>li.list>a{display: block;}
-header li.close{position: relative; cursor: pointer; }
-header li.close img{position: absolute; right: 4.792%; top: 50%; transform: translateY(-50%);}
-header #gnb2 #overlayer{width: 100%; height: 100%; position: fixed; background-color: rgba(0,0,0,0.5); top: 0; left: 0; display: none; z-index: 998; transition: 0.5s ease-in-out;}
+#header #gnb2{width: 100%; height: 76px; padding: 0 8.203%; box-sizing: border-box; position: relative;}
+#header #gnb2{display: none;}
+#header #gnb2 #mypage{float: left; position: absolute; top: 50%; transform: translateY(-50%);}
+#header #gnb2 .logo{width: 80px; float: left; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+#header #gnb2 .logo img{width: 100%;}
+#header #gnb2 #hamburger{position: absolute; top: 50%; right: 9.117%; transform: translateY(-50%); cursor: pointer;}
+#header #gnb2 ul.main_list{top: 0; left: -100%; position: fixed; z-index: 999; transition: 0.5s ease-in-out;}
+#header #gnb2 ul.main_list li{width: 100%; font-size: 1.286rem; line-height: 60px; text-align: center; background-color: #ffffff;}
+#header #gnb2 ul.main_list>li>a{font-family: 'Kopub돋움Bold';}
+#header #gnb2 ul.main_list>li:first-child{width: 100%; height: 60px; background-color: #1bb2d1;}
+#header #gnb2 ul.main_list>li.list>a{display: block;}
+#header li.close{position: relative; cursor: pointer; }
+#header li.close img{position: absolute; right: 4.792%; top: 50%; transform: translateY(-50%);}
+#header #gnb2 #overlayer{width: 100%; height: 100%; position: fixed; background-color: rgba(0,0,0,0.5); top: 0; left: 0; display: none; z-index: 998; transition: 0.5s ease-in-out;}
 
 header #gnb2 ul.sub_list{display: none;}
 
 .center{width: 75%; margin: 0 auto;}
 
-footer{width: 100%; clear: both; background-color: #1bb2d1; position: relative; padding: 35px 0; box-sizing: border-box;}
-footer ul{margin-bottom: 50px; display: flex; justify-content: center;}
-footer ul li{float: left; margin-right: 6.614%;}
-footer ul li:last-child{margin-right: 0;}
-footer ul li a{color: #ffffff; font-size: 1rem;}
-footer #address{font-size: 0.857rem; text-align: center; color: #ffffff;}
+#footer{width: 100%; clear: both; background-color: #1bb2d1; position: relative; padding: 35px 0; box-sizing: border-box;}
+#footer ul{margin-bottom: 50px; display: flex; justify-content: center;}
+#footer ul li{float: left; margin-right: 6.614%;}
+#footer ul li:last-child{margin-right: 0;}
+#footer ul li a{color: #ffffff; font-size: 1rem;}
+#footer #address{font-size: 0.857rem; text-align: center; color: #ffffff;}
 
 /* m */
 @media screen and (min-width: 360px) and (max-width: 767px){
 .center{width: 90%; min-width: 324px; max-width: 690.3px;}
-header #top{display: none;}
-header #gnb{display: none;}
+#header #top{display: none;}
+#header #gnb{display: none;}
 
-header #gnb2{display: block;}
-header #gnb2{height: 68px; padding: 0 5.555%;}
-header #gnb2 #mypage img{width: 36px;}
-header #gnb2 #hamburger{right: 6.173%;}
-header #gnb2 #hamburger img{width: 36px;}
-header #gnb2 ul.main_list{width: 240px; top: 0; right: 0; position: fixed;}
-header #gnb2 ul.main_list li{width: 240px; font-size: 1.143rem; line-height: 50px;}
-header #gnb2 ul.main_list>li:first-child{width: 240px; height: 50px;}
+#header #gnb2{display: block;}
+#header #gnb2{height: 68px; padding: 0 5.555%;}
+#header #gnb2 #mypage img{width: 36px;}
+#header #gnb2 #hamburger{right: 6.173%;}
+#header #gnb2 #hamburger img{width: 36px;}
+#header #gnb2 ul.main_list{width: 240px; top: 0; right: 0; position: fixed;}
+#header #gnb2 ul.main_list li{width: 240px; font-size: 1.143rem; line-height: 50px;}
+#header #gnb2 ul.main_list>li:first-child{width: 240px; height: 50px;}
 
-footer{padding: 14px;}
-footer ul{margin-bottom: 10px;}
-footer ul li{margin-right: 12.585%;}
-footer ul li a{font-size: 0.857rem;}
-footer #address{font-size: 0.714rem;}
+#footer{padding: 14px;}
+#footer ul{margin-bottom: 10px;}
+#footer ul li{margin-right: 12.585%;}
+#footer ul li a{font-size: 0.857rem;}
+#footer #address{font-size: 0.714rem;}
 }
 
 /* t */
 @media screen and (min-width: 768px) and (max-width: 1023px){
 .center{width: 90%; min-width: 691.2px; max-width: 921.6px;}
-header #top{display: none;}
-header #gnb{display: none;}
-header #gnb2{width: 100%; height: 76px; padding: 0 5.078%;}
-header #gnb2 .logo{top: 50%; left: 50%; transform: translate(-50%, -50%);}
-header #gnb2 ul.main_list{width: 313px;} 
-header #gnb2 #hamburger{right: 5.078%;}
-header #gnb2{display: block;}
+#header #top{display: none;}
+#header #gnb{display: none;}
+#header #gnb2{width: 100%; height: 76px; padding: 0 5.078%;}
+#header #gnb2 .logo{top: 50%; left: 50%; transform: translate(-50%, -50%);}
+#header #gnb2 ul.main_list{width: 313px;} 
+#header #gnb2 #hamburger{right: 5.078%;}
+#header #gnb2{display: block;}
 
-footer{width: 100%; padding: 34px 0;}
-footer ul{margin-bottom: 50px;}
-footer ul li{margin-right: 14.006%;}
+#footer{width: 100%; padding: 34px 0;}
+#footer ul{margin-bottom: 50px;}
+#footer ul li{margin-right: 14.006%;}
 }
